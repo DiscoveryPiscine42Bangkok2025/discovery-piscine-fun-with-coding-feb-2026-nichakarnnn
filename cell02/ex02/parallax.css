@@ -1,15 +1,13 @@
-/* ล้างค่าขอบเริ่มต้น */
 body, html {
     margin: 0;
     padding: 0;
     height: 100%;
 }
 
-/* ตั้งค่าส่วนที่มีรูปพื้นหลัง */
 .parallax-section {
     position: relative;
-    height: 100vh; /* ให้สูงเต็มหน้าจอ */
-    background-attachment: fixed; /* สร้างเอฟเฟกต์ Parallax */
+    height: 100vh;
+    background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -18,7 +16,6 @@ body, html {
     align-items: center;
 }
 
-/* ใส่รูปภาพ (เปลี่ยน URL เป็นรูปที่คุณชอบ) */
 .bg1 {
     background-image: url('https://static.thairath.co.th/media/B6FtNKtgSqRqbnNsbITzIJ1whsgJxPeIgQX3qLRpM2reeNitM2W3XIjzxFV5rz107suY2.jpg');
 }
@@ -27,7 +24,6 @@ body, html {
     background-image: url('https://static.thairath.co.th/media/PZnhTOtr5D3rd9oc9eGGjtty9v9V3KIe1PrRf8XEmuNhZyJ.jpg');
 }
 
-/* ข้อความกึ่งกลาง */
 .centered-text {
     background-color: rgba(0, 0, 0, 0.5);
     color: white;
@@ -37,7 +33,6 @@ body, html {
     border: 2px solid white;
 }
 
-/* บล็อกสีดำ */
 .black-block {
     background-color: black;
     color: white;
