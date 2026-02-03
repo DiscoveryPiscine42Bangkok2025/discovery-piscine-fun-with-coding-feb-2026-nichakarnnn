@@ -1,0 +1,36 @@
+/* จัดการหน้าจอให้ไม่มีขอบและสูงเต็มจอ */
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+}
+
+/* ใช้ Flexbox เพื่อจัดให้ปุ่มอยู่กึ่งกลางทั้งแนวตั้งและแนวนอน */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: background-color 0.1s ease; /* เปลี่ยนสีไวๆ ตามสไตล์ JS พื้นฐาน */
+}
+
+/* ปรับแต่งปุ่มให้ขนาดและตำแหน่งเป๊ะ */
+button {
+    padding: 10px 24px;      /* ขนาดปุ่มที่ดูสมดุล */
+    font-size: 1.2rem;       /* ขนาดตัวอักษรให้อ่านง่าย */
+    cursor: pointer;         /* เปลี่ยนเมาส์เป็นรูปมือเมื่อชี้ */
+    background-color: #efefef; /* สีพื้นหลังปุ่มมาตรฐาน */
+    border: 1px solid #767676; /* สีขอบปุ่ม */
+    border-radius: 4px;      /* ความโค้งมนเล็กน้อย */
+    font-family: Arial, sans-serif;
+}
+
+/* เอฟเฟกต์ตอนเอาเมาส์ไปชี้และตอนกด */
+button:hover {
+    background-color: #e5e5e5;
+}
+
+button:active {
+    background-color: #d5d5d5;
+    transform: scale(0.98); /* ยุบลงเล็กน้อยเวลาหน้าจอกด */
+}
