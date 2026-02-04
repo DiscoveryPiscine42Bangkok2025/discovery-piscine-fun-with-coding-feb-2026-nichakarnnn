@@ -1,24 +1,19 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <title>Change background</title>
-    <link rel="stylesheet" href="background.css">
+    <link rel="stylesheet" href="backgroound.css">
 </head>
 <body>
-
     <button onclick="changeColor()">Click me!</button>
 
     <script>
         function changeColor() {
-            var r = Math.floor(Math.random() * 256);
-            var g = Math.floor(Math.random() * 256);
-            var b = Math.floor(Math.random() * 256);
-
-            document.body.style.backgroundColor =
-                "rgb(" + r + "," + g + "," + b + ")";
+            const r = Math.floor(Math.random() * 256);
+            const g = Math.floor(Math.random() * 256);
+            const b = Math.floor(Math.random() * 256);
+            const color = "rgb(" + r + "," + g + "," + b + ")";
+            document.body.style.backgroundColor = color;
         }
     </script>
-
 </body>
 </html>
